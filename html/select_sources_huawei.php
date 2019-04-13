@@ -1,0 +1,23 @@
+<!-- value=Methode aus Klasse Router -->
+ <option value="">welche Information willst du?...</option>
+ <option value="getToken,0"          >Session Token</option>
+ <option value="getStatus,0"         >Status</option>
+ <option value="getCradleStatus,0"   >Cradle Status</option>
+ <option value="getConvergedStatus,0">Converged Status</option>
+ <option value="getTrafficStats,0"   >Traffic Statistics</option>
+ <option value="getNotifications,0"  >Meldungsübersicht</option>
+ <option value="getNetwork,0"        >Netzwerk</option>
+ <option value="getSignal,0"         >Signal</option>
+ <option value="login,0"             >Anmelden</option>
+ <option value="getToken,login,getWlanClients,getClients,logout,save">Alle Clients</option>
+ <option value="getClients,1"        >Lan  Clients</option>
+ <option value="getWlanClients,1"    >Wlan Clients</option>
+ <option value="getSmsCount,1"       >SMS-Übersicht</option>
+ <option value="getInbox,1"          >SMS-Detail</option>
+ <option value="getDeviceInfo,1"     >Geraete Info</option>
+ <option value="isLoggedIn,1"        >Anmeldestatus</option>
+ <option value="logout,1"            >Abmelden</option>
+ <option value="" disabled           > </option>
+ <option value="http://&&1/html/home.html">starte Router interface</option>
+ <option value="https://www.upc.at/internet/speedtest/speedtest/">Speedtest</option>
+

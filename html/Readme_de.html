@@ -1,0 +1,167 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { white-space:pre-line; }
+  h3   { margin-bottom:0; margin-top:0; }
+  h4   { margin-bottom:0; margin-top:0; }
+  h5   { margin-bottom:0; margin-top:0; }
+</style>
+<title>mySmartPlayer - Steuerung von Netzwerk Lautsprechern</title>
+<h3>
+-------------------------------------------------------
+mySmartPlayer - Steuerung von Netzwerk Lautsprechern 
+-------------------------------------------------------
+</h3>
+</head>
+<body>
+- Steuerung von WiFi Audio und anderen Geräten mithilfe unterschiedlicher web interfaces
+- ersetzt nicht die jeweiligen standard apps wie MuzoPlayer oder Soundtouch 
+  bietet jedoch wesentlich einfacheren und schnelleren Zugriff auf die wichtigsten Funktionen
+- wird als web Applikation mit http-Befehl im beliebigen web browser gestartet und ist daher unabhängig vom Betriebsystem
+  während die jeweiligen standard apps meist nur für Android und IOS existieren und nicht für Windows oder Linux
+
+<h5>
+-------------------------------------------------------
+Systemvoraussetzungen:
+-------------------------------------------------------
+</h5>
+- web Server mit PHP support:
+-- PHP beliebige Version ab 5 mit der Erweiterung curl
+-- apache oder anderer web server, verschiedene Lösungen abhängig vom Betriebssystem  
+--- auf Synology unter DSM kann der integrierte web server mit PHP aktiviert werden 
+--- unter Windows kann das verfügbare Feature InternetIntegrationServices ("IIS") aktiviert werden
+    beim IIS muss die CGI Option aktiviert werden
+    PHP wird ganz einfach manuell installiert, getestet mit "php.net"
+--- unter Linux kann der apache server und PHP von den Anwendungspaketquellen installiert werden
+--- unter Android kann irgendein web server mit PHP vom Store installiert werden, getestet mit "Server für PHP"
+- Installation:
+- source code der app wird in einen Folder des web servers kopiert und damit ist die app überall im lokalen Netzwerk verfügbar
+- mit "http:<ip des web servers>/phpinfo.php" kann die Installation verifiziert werden (modul cUrl aktiviert?)
+Client:
+- jeder beliebige web browser sollte die app ausführen können
+
+<h5>
+--------------------------------------------------------
+Vorteile meiner app zu standard apps der Hersteller:
+--------------------------------------------------------
+</h5>
+- "one-app-for-many": auf einem einzigen Bildschirm werden mehrere Geräte auf einheitliche Art gesteuert
+  Das spart viel Zeit und Tipparbeit und es muss nicht das zum Gerät passende Programm gestartet werden.
+- standard apps benötigen bei jedem Start viel Zeit zum Suchen kompatibler Lautsprecher
+  was durch Verwendung fixer IP Adressen für alle angeschlossenen Geräte bei meiner app entfällt
+  Extrem lange Wartezeit gibt es mit der Bose Soundtouch app. Eine Schande!
+- verfügbar auf allen Geräten wie Desktop,Tablet,Smartphone unabhängig vom Betriebssystem
+- uneingeschränkter und wesentlich schnellerer Zugriff auf ausgewählte Radiosender und Musiktitel
+- ermöglicht wesentlich einfachere Verwaltung von einheitlichen Radio/Musik-Favoriten für alle Geräte
+- zentrale Verwaltung von Favoriten ermöglicht sofortige Verfügbarkeit auf allen Clients
+  Mit diversen standard apps können Favoriten nicht von einem auf mehrere Geräte kopiert werden.
+  Favoriten sind Benutzer-abhängig sowie unter diversen Services verteilt (Spotify, Tunein, Musikserver, etc.) gespeichert.  
+
+<h4>
+-------------------------------------------------------
+WiFi Lautsprecher Steuerung
+-------------------------------------------------------
+</h4>
+unterstützt werden:
+- HXS910 von XORO und zahlreiche kompatible Geräte anderer Hersteller (Medion, AugustInt etc.)
+  Steuerung via web API von Linkplay-Axx wifi-audio modul  
+  als auch via SOAP API von upnp.org und wiimu.com
+- Soundtouch-xxx von Bose, 
+  Steuerung via web API von Bose
+
+Bedienung der app:
+- Geräteauswahl mittels Dropdown:
+-- Zielgerät wird direkt ausgewählt 
+-- zusätzliche Suche im IP Bereich 
+-Musikauswahl mittels Dropdown:
+-- Internetradio-Sender
+-- vom Gerät unterstützte Musikdienste wie Spotify,Amazon u.a. 
+-- private Musik-Sammlungen vom UPnP/Dlna Server wie Synology
+-Kontrollfunktionen:
+-- play
+-- pause
+-- continue
+-- next
+-- previous
+-- volume
+-- player modus (repeat,shuffle)
+-- player info (current piece of music)
+-- device info
+-- preset stations info
+-- save current piece of music as select option 
+
+<h4>
+-------------------------------------------------------
+SAT Receiver Steuerung 
+-------------------------------------------------------
+</h4>
+unterstützt werden:
+- VU-SOLO2 und VU-UNO4K von VUplus,
+  Steuerung via Enigma2 web interface
+
+Bedienung:
+- entspricht Tasten der Fernbedienung: 
+-- ok,exit,up,down,left,right,volume-up,volume-down,menu,epg-info,red,green,yellow,blue,ListofRecordings,EPG
+
+Auswahl spezieller Funtionen:
+-- Aufruf des Enigma2 web interface
+-- Aufruf des OSCAM web interface
+-- Standby
+-- Neustart
+
+<h4>
+-------------------------------------------------------
+Netzwerkrouter Steuerung 
+-------------------------------------------------------
+</h4>
+unterstützt wird:
+- Huawei E5186
+  Steuerung via eingebautem API
+
+Auswahl der wichtigsten Informationen sowie spezieller Web-Seiten:
+-- Status, Netzwerk, Lan/Wlan Clients, SMS Nachrichten, u.a.
+-- Makro Funktion
+-- Aufruf des web interface
+-- Aufruf des Speedtest von UPC
+
+<h4>
+-------------------------------------------------------
+Extras 
+-------------------------------------------------------
+</h4>
+- Unter den "Extras" kann die Formatierung für den Info-Bereich eingestellt werden. 
+- Ebenfalls unter "Extras" können inaktive, nicht erreichbare Geräte ausgeblendet werden.
+
+<h5>
+-------------------------------------------------------
+Schnellstart Anleitung:
+-------------------------------------------------------
+</h5>
+- die Datei "select_hostnames_[wiimu|bose|vu].php" enthält die Hostnamen und IP Adressen der Geräte; 
+  prüfe, ob sie von der app (vom web server) mit ping erreicht werden
+  Zusätzliche Hilfe bietet die Suchfunktion, die ab wählbarer IP Adresse nach dem gewählten Gerät sucht. 
+
+- die Datei "select_sources_[wiimu|bose].php" enthält Internetradio-Sender,
+  Internetradio-Sender sind allgemein gültig und werden mit meiner Liste installiert.
+  Hier können Links von Musikdiensten wie TuneIn, Spotify, Amazon eingetragen werden.
+  Getestet wurde nur TuneIn und Amazon, jedoch sollten alle vom Gerät unterstützten Dienste möglich sein. 
+
+- die Datei "select_sources__[wiimu|bose].php" enthält Lieblingstitel einer privaten Musikbibliothek via UPnP/Dlna Server,
+  diese Liste ist bei Erstinstallation leer und kann danach neu erstellt werden.
+
+- die Datei "select_playlists_[wiimu|bose].php" enthält Sammlungen von Musiktiteln oder Radiostationen. 
+  Wenn in "select_sources...php" anstelle einer URL "select_playlists" steht, 
+    werden aus "select_playlists...php" die select options mit entsprechender Select-ID als Playlist gestartet. 
+  In der Playlist kann mittels vorwärts-/rückwärts-Tasten navigiert werden.
+  Diese Funktion ist nur für Xoro verfügbar und wird von Bose nicht unterstützt.  
+  Bose erlaubt beim Abspielen eines Musititels automatisch die Navigation zwischen allen Nummern des entsprechenden Musikalbums. 
+
+- für die Erstellung und Verwaltung der Auswahllisten empfiehlt sich folgende Vorgehensweise:
+-- Abspielen eines Musikstücks mittels der mobilen Lautsprecher Apps für Xoro (wie Muzo Player, August Alink etc.) bzw. Soundtouch für Bose.
+-- Abspeichern des Musikstücks mit mySmartPlayer mithilfe der entsprechenden Taste (*).
+   Damit wird eine select-option-Zeile in der Datei "curl_[wiimu|bose]_sources.txt hinzugefügt. 
+-- Kopieren von "curl...sources.txt" und Einfügen in "select_sources...php" mit Texteditor.
+</body>
+</html>

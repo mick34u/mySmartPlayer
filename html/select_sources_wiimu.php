@@ -1,0 +1,47 @@
+<!-- value="source,URL,artist,pictureURL" -->
+ <option value="">wähle einen Radiosender...</option>
+ <option value="TuneIn,http://stream.srg-ssr.ch/m/rsj/aacp_96.m3u,,http://cdn-radiotime-logos.tunein.com/s6814q.png"        >Radio Swiss Jazz</option>
+ <option value="TuneIn,http://stream.laut.fm/radiojazz,,http://cdn-radiotime-logos.tunein.com/s10614.png"                   >Radio-Jazz</option>
+ <option value="TuneIn,http://pureplay.cdnstream1.com/6049_64.aac,,https://cdn-radiotime-logos.tunein.com/s49695q.png"      >GotRadio Jazz So Smooth</option>
+ <option value="TuneIn,http://stream.srg-ssr.ch/m/rsc_de/aacp_96.m3u,,http://cdn-radiotime-logos.tunein.com/s25582q.png"    >Radio Swiss Classic</option>
+ <option value="TuneIn,http://stream.klassikradio.de/live/mp3-192,,http://cdn-radiotime-logos.tunein.com/s25028.png"        >Klassik Radio</option>
+ <option value="TuneIn,http://stream.klassikradio.de/verdi/mp3-192,,https://cdn-radiotime-logos.tunein.com/s250280q.png"    >Klassik Radio Pure Verdi</option>
+ <option value="TuneIn,http://stream.klassikradio.de/dreams/mp3-192,,https://cdn-radiotime-logos.tunein.com/s25028q.png"    >Klassik Radio Klassik dreams</option>
+ <option value="TuneIn,http://109.123.116.202:8022,,http://cdn-radiotime-logos.tunein.com/s95144.png"                       >Venice-Classic-Radio</option>
+ <option value="TuneIn,select_playlists,Blues Radios,"                                                                      >Blues Radiostationen(3)</option>
+ <option value="TuneIn,http://edge4.peta.live365.net/b77280_128mp3,,http://cdn-radiotime-logos.tunein.com/s183588q.png"     >Aardvark Blues FM</option>
+ <option value="TuneIn,http://radio.1jazz.ru:8090/radio,,http://cdn-radiotime-logos.tunein.com/s200813q.png"                >1jazz.ru - Blues</option>
+ <option value="TuneIn,http://37.59.14.77:8352/stream,,"                                                                    >Blues Radio</option>
+ <option value="TuneIn,http://pureplay.cdnstream1.com/6019_64.aac,,https://cdn-radiotime-logos.tunein.com/s49671q.png"      >GotRadio Bit O Blues</option>
+ <option value="TuneIn,http://pureplay.cdnstream1.com/6029_64.aac,,https://cdn-radiotime-logos.tunein.com/s49678q.png"      >GotRadio Todays Country</option>
+ <option value="TuneIn,http://pureplay.cdnstream1.com/6001_64.aac,,https://cdn-radiotime-logos.tunein.com/s49682q.png"      >GotRadio Folklore</option>
+ <option value="TuneIn,select_playlists,Irish Radios,"                                                                      >Irische Radiostationen(6)</option>
+ <option value="TuneIn,http://178.32.219.72:8326/,,http://cdn-profiles.tunein.com/s116266/images/logoq.jpg?t=154401"        >Irish Pub Radio</option>
+ <option value="TuneIn,http://irish-folk.stream.laut.fm/irish-folk,,http://cdn-profiles.tunein.com/s306601/images/logoq.jpg">Irish Folk</option>
+ <option value="TuneIn,http://192.111.140.11:8058/stream,,http://cdn-radiotime-logos.tunein.com/s17895q.png"                >live Ireland</option>
+ <option value="TuneIn,http://66.70.187.44:9123/stream,,http://cdn-profiles.tunein.com/s15112/images/logoq.png?t=152606"    >All Irish Radio</option>
+ <option value="TuneIn,http://pureplay.cdnstream1.com/6007_64.aac,,https://cdn-radiotime-logos.tunein.com/s65668q.png"      >GotRadio Celtic Crossing</option>
+ <option value="TuneIn,http://stream.laut.fm/celtic-sounds,,http://cdn-radiotime-logos.tunein.com/s101189.png"              >Radio-Celtic-Sounds</option>
+ <option value="TuneIn,http://87.98.217.63:24112/stream,,http://cdn-radiotime-logos.tunein.com/s244590.png"                 >MacSlons-Irish-Pub-Radio</option>
+ <option value="TuneIn,http://stream.srg-ssr.ch/m/rsp/aacp_96.m3u,,http://cdn-radiotime-logos.tunein.com/s25243q.png"       >Radio Swiss Pop</option>
+ <option value="TuneIn,http://broadcast.infomaniak.ch/start-latina-high.mp3.m3u,,http://cdn-radiotime-logos.tunein.com/s2469q.png">Latina</option>
+ <option value="TuneIn,http://sh2.audio-stream.com:2199/tunein/msanchez.pls,,http://cdn-radiotime-logos.tunein.com/s95277.png">LATINO</option>
+ <option value="TuneIn,https://listen.openstream.co:443/3077/audio,,https://cdn-radiotime-logos.tunein.com/s269960q.png"    >Reggaeton Radio FM</option>
+ <option value="TuneIn,http://pureplay.cdnstream1.com/6051_64.aac,,https://cdn-radiotime-logos.tunein.com/s49691q.png"      >GotRadio Reggae</option>
+ <option value="TuneIn,select_playlists,Lokale Radios,"                                                                     >Lokale Radiostationen(10)</option>
+ <option value="TuneIn,http://mp3stream3.apasf.apa.at:8000,,http://cdn-radiotime-logos.tunein.com/s8514q.png"               >Österreich 1</option>
+ <option value="TuneIn,http://mp3stream9.apasf.apa.at:8000,,http://cdn-radiotime-logos.tunein.com/s26058q.png"              >ORF Radio Steiermark</option>
+ <option value="TuneIn,http://mp3stream7.apasf.apa.at:8000,,http://cdn-radiotime-logos.tunein.com/s8007q.png"               >OE3 Hitradio</option>
+ <option value="TuneIn,http://mp3stream1.apasf.apa.at:8000,,http://cdn-radiotime-logos.tunein.com/s8235q.png"               >Radio FM4</option>
+ <option value="TuneIn,http://live.welle1.at:9128,,http://cdn-radiotime-logos.tunein.com/s25261q.png"                       >Welle 1 Graz</option>
+ <option value="TuneIn,http://live.antenne.at/as,,http://cdn-radiotime-logo.tunein.com/s1139q.png"                          >Antenne Steiermark</option>
+ <option value="TuneIn,http://onair-ha1.krone.at/kronehit-hd.mp3,,http://cdn-radiotime-logos.tunein.com/s15532q.png"        >KRONEHIT Radio</option>
+ <option value="TuneIn,http://212.48.110.149:8000,,http://cdn-radiotime-logos.tunein.com/s25852.png"                        >Das-Soundportal-Radio</option>
+ <option value="TuneIn,http://188.138.9.183/lounge-at.mp3,,http://cdn-radiotime-logos.tunein.com/s68932q.png"               >Lounge-FM Wien</option>
+ <option value="TuneIn,http://188.138.9.183/ukwwien.mp3,,http://cdn-radiotime-logos.tunein.com/s177755.png"                 >Lounge-FM-Digital</option>
+ <option value="TuneIn,http://live.antenne.at/chr,,"                                                                        >Antenne Christmas Hits</option>
+ <option value="TuneIn,http://arabella.stream.kapper.net:8017/arabellachristmas,,"                                          >Radio Arabella Christmas</option>
+ <option value="TuneIn,http://listen.radionomy.com/TheChristmasStationfromAllHeart,,"                                       >The Christmas Station</option>
+ <option value="TuneIn,http://epsilon.shoutca.st:8811/main,,"                                                               >Radio Christmas</option>
+ <option value="TuneIn,http://145.239.82.153:8000/relay,,"                                                                  >All Christmas Hits</option>
+
